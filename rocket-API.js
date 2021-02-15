@@ -40,15 +40,11 @@ function displayResults(json){
       console.log('could not find results')
     }else {
     for ( let i = 0; i < results.length; i++) {
-      let row = document.createElement('td')
-      let rowTwo = document.createElement('td')
-      let rowThree = document.createElement('td')
-        // if(results.length > 1){
-        //   createElement('card')
-        // }
-      let missionName = document.createElement('p');
-      let missionDate = document.createElement('p');
-      let missionSuccess = document.createElement('p');
+      let row = document.createElement('tr')
+       
+      let missionName = document.createElement('td');
+      let missionDate = document.createElement('td');
+      let missionSuccess = document.createElement('td');
       
       let current = results[i];
       let name = current.mission_name;
@@ -66,10 +62,8 @@ function displayResults(json){
       
       dataResults.appendChild(row);
       row.appendChild(missionName);
-      dataResults.appendChild(rowTwo);
-      rowTwo.appendChild(missionDate);
-      dataResults.appendChild(rowThree);
-      rowThree.appendChild(missionSuccess);
+      row.appendChild(missionDate);
+      row.appendChild(missionSuccess);
     }
   }
 }
