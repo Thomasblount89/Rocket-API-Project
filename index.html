@@ -19,15 +19,14 @@
 <body>
 
     <div class="topnav">
-        
         <div class="navRight">
           <p> <b>Rocket Launch API</b> </p>
         </div>
     </div>
 
       
-<label for="launchYears" class="DB" >Select Launch Year</label>
-    <select onchange="submit()" id="myDropdown" name="launchYears">
+  <label for="launchYears" class="DB" >Select Launch Year</label>
+      <select onchange="submit()" id="myDropdown" name="launchYears">
         <option>Please Select</option>
         <option value="2006">2006</option>
         <option value="2007">2007</option>
@@ -39,9 +38,9 @@
         <option value="2013">2013</option>
         <option value="2014">2014</option>  
         <option value="2015">2015</option>
-    </select>
+      </select>
 
-    <section>
+      <section>
         <section>
            <table style="width:100%" >
               <tr>
@@ -50,22 +49,26 @@
                 <th style= background-color:rgb(206,115,115)>Mission Success</th>
                 <th style= background-color:>No Launch</th>
               </tr>
-              <!-- <tr id="dataResults"></tr> -->
             </table>
         </section> 
 
          <section class="flex-container">
-            <table style="width:100%" id="dataResults">
-              
-            </table>
+            <table style="width:100%" id="dataResults"></table>
           </section>
 
-         </section>
+      </section>
 
+        <section>
+          <div class="rocketLogo mx-auto">
+            <img class="img-fluid" src="assests/favpng_rocket.png">
+          </div>
+           
+
+
+        </section>
          
           
-
-       </section>
+</body>
 
     <script type="text/javascript" src="rocket-API.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
